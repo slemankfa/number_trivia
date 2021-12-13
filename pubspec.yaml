@@ -35,10 +35,12 @@ dependencies:
   dartz: ^0.10.1
   # Remote API
   connectivity: ^3.0.6
+  data_connection_checker: ^0.3.4
   http: ^0.13.4
   # Local cache
   shared_preferences: ^0.5.3+4
   build_runner: ^2.1.1
+  
 
 dev_dependencies:
   flutter_test:
