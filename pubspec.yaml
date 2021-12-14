@@ -38,7 +38,7 @@ dependencies:
   data_connection_checker: ^0.3.4
   http: ^0.13.4
   # Local cache
-  shared_preferences: ^0.5.3+4
+  shared_preferences: ^2.0.6
   build_runner: ^2.1.1
   
 
