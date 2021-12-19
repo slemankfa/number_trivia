@@ -22,7 +22,7 @@ class NumberTriviaRepositoryImpl implements NumberTriviaRepostiry {
   });
 
   @override
-  Future<Either<Failures, NumberTrivia>> getConcreateNumberTrivia(
+  Future<Either<Failure, NumberTrivia>> getConcreateNumberTrivia(
       int number) async {
     // TODO: implement getConcreateNumberTrivia
 
@@ -32,7 +32,7 @@ class NumberTriviaRepositoryImpl implements NumberTriviaRepostiry {
   }
 
   @override
-  Future<Either<Failures, NumberTrivia>> getRandomNumberTrivia() async {
+  Future<Either<Failure, NumberTrivia>> getRandomNumberTrivia() async {
     // TODO: implement getRandomNumberTrivia
     // throw UnimplementedError();
     return _getTrivia(() {
@@ -40,7 +40,7 @@ class NumberTriviaRepositoryImpl implements NumberTriviaRepostiry {
     });
   }
 
-  Future<Either<Failures, NumberTrivia>> _getTrivia(
+  Future<Either<Failure, NumberTrivia>> _getTrivia(
       _ConcreateOrRandomChooser getconcreateOrRandom) async {
     if (await networkInfo.isConnected) {
       try {

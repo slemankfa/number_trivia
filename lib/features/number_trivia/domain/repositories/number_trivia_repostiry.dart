@@ -5,6 +5,6 @@ import '../entities/number_trivia.dart';
 
 abstract class NumberTriviaRepostiry {
   // Failures in the left side when errors happend
-  Future<Either<Failures, NumberTrivia>> getConcreateNumberTrivia(int number);
-  Future<Either<Failures, NumberTrivia>> getRandomNumberTrivia();
+  Future<Either<Failure, NumberTrivia>> getConcreateNumberTrivia(int number);
+  Future<Either<Failure, NumberTrivia>> getRandomNumberTrivia();
 }
